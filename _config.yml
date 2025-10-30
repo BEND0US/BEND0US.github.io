@@ -6,6 +6,7 @@ author: "BEND0US"
 baseurl: ""
 url: "https://bend0us.github.io"
 show_excerpts: true
+future: true
 markdown: kramdown
 
 header_pages:
