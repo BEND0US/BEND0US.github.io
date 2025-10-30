@@ -3,18 +3,11 @@
 
 @import "{{ site.theme }}";
 
-.wrapper {
-  max-width: 1200px !important;
-}
-
-.site-nav {
-  display: flex !important;
-  justify-content: center !important;
-  flex-wrap: wrap !important;
-  gap: 10px !important;
-}
-
-.site-nav .page-link {
-  white-space: nowrap !important;
-  padding: 6px 12px !important;
+.site-nav a[href$="/binary-exploitation/"] {
+  display: inline-block;
+  width: 110px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  padding: 6px 8px;
 }
