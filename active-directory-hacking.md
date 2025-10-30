@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AD Hacking"
+title: "Active Directory Hacking"
 permalink: /active-directory-hacking/
 ---
 
