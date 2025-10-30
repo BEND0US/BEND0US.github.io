@@ -1,0 +1,9 @@
+@import "{{ site.theme }}";
+
+.wrapper {
+  max-width: 1200px;  
+}
+
+.site-nav .page-link {
+  white-space: nowrap;
+}
