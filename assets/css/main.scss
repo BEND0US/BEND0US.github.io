@@ -4,17 +4,17 @@
 @import "{{ site.theme }}";
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
 
 .site-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
 }
 
 .site-nav .page-link {
-  white-space: nowrap;
-  padding: 6px 12px;
+  white-space: nowrap !important;
+  padding: 6px 12px !important;
 }
