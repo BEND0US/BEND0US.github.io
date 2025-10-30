@@ -7,6 +7,7 @@ baseurl: ""
 url: "https://bend0us.github.io"
 show_excerpts: true
 future: true
+excerpt_separator: <!--more-->
 markdown: kramdown
 
 header_pages:
