@@ -1,5 +1,6 @@
 title: "BEND0US | Offensive Security Notes"
-description: "Research and insights on Red Teaming, Web Security, Active Directory, Cloud, and vulnerability exploitation."
+#description: "Research and insights on Red Teaming, Web Security, Active Directory, Cloud, and vulnerability exploitation."
+description: "Offensive Security Notes"
 theme: minima
 author: "BEND0US"
 baseurl: ""
